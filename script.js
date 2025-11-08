@@ -130,7 +130,7 @@ jobForm && jobForm.addEventListener('submit',(e)=>{
 const toTop = document.getElementById('toTop');
 toTop.addEventListener('click', ()=>window.scrollTo({top:0,behavior:'smooth'}));
 const callNow = document.getElementById('callNow');
-callNow.addEventListener('click', ()=>{ window.location.href='tel:+233200000000'; });
+callNow.addEventListener('click', ()=>{ window.location.href='tel:+233552708943'; });
 
 // Admin interop: if projects changed, reload main page
 window.addEventListener('storage', (e)=>{ if(e.key==='obeng_projects_v2') loadProjects(); });
