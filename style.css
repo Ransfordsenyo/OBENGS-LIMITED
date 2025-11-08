@@ -66,7 +66,7 @@
 
 /* CONTACT */
 .contact-section{display:grid;grid-template-columns:1fr 360px;gap:18px;align-items:start}
-.contact-form input, .contact-form textarea, .contact-form select{width:100%;padding:10px;border-radius:8px;border:1px solid #e8eef6}
+.contact-form input, .contact-form textarea, .contact-form select, .job-form input, .job-form textarea, .job-form select{width:100%;padding:10px;border-radius:8px;border:1px solid #e8eef6}
 .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .form-row{display:flex;gap:12px;align-items:center}
 .form-msg{color:var(--muted)}

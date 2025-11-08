@@ -118,11 +118,19 @@ form && form.addEventListener('submit',(e)=>{
   setTimeout(()=>{ formMsg.textContent='Submitted — you will be redirected by Formspree if configured.'; },700);
 });
 
+// Job form message
+const jobForm = document.getElementById('jobForm');
+const jobFormMsg = document.getElementById('jobFormMsg');
+jobForm && jobForm.addEventListener('submit',(e)=>{
+  jobFormMsg.textContent='Sending...';
+  setTimeout(()=>{ jobFormMsg.textContent='Application submitted — you will be redirected by Formspree if configured.'; },700);
+});
+
 // Scroll-to-top and call button
 const toTop = document.getElementById('toTop');
 toTop.addEventListener('click', ()=>window.scrollTo({top:0,behavior:'smooth'}));
 const callNow = document.getElementById('callNow');
-callNow.addEventListener('click', ()=>{ window.location.href='tel:+233552708943'; });
+callNow.addEventListener('click', ()=>{ window.location.href='tel:+233200000000'; });
 
 // Admin interop: if projects changed, reload main page
 window.addEventListener('storage', (e)=>{ if(e.key==='obeng_projects_v2') loadProjects(); });
